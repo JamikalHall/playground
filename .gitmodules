@@ -1,0 +1,3 @@
+[submodule "playground/themes/paper"]
+	path = playground/themes/paper
+	url = https://github.com/nanxiaobei/hugo-paper
