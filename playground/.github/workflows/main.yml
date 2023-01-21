@@ -1,4 +1,8 @@
-name: front-end
+name: deploy
+permissions:
+  id-token: write # required to use OIDC authentication
+  contents: read # required to checkout the code from the repo
+
 #when a push is made to any of these directories
 on:
   push:
@@ -37,7 +41,6 @@ jobs:
         aws s3 sync \
           --delete \
           . s3://jamikal.xyz
-
     - name: Cloudfront invalidation
       run: |
         aws cloudfront create-invalidation \
