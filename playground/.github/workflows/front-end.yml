@@ -2,13 +2,9 @@ name: front-end
 #when a push is made to any of these directories
 on:
   push:
-    paths:
-      - "content/**"
-      - "extra/**"
-      - "layouts/**"
-      - "static/**"
     branches:
       - main
+
 #list AWS region
 env:
   AWS_REGION: us-east-1
