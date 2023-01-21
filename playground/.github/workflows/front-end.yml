@@ -2,8 +2,7 @@ name: front-end
 #when a push is made to any of these directories
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
 
 #list AWS region
 env:
