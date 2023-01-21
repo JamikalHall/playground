@@ -7,6 +7,8 @@ on:
       - "extra/**"
       - "layouts/**"
       - "static/**"
+    branches:
+      - main
 #list AWS region
 env:
   AWS_REGION: us-east-1
